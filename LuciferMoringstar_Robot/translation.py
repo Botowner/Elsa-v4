@@ -70,7 +70,7 @@ ADMIN_CMD_MESSAGE = """
 STATUS_MESSAGE = """
  {bot_name} 𝚂𝚃𝙰𝚃𝚄𝚂 :-
 
-╭─<a href=https://t.me/cinemala_com1>ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ</a> ]──〄
+╭─[<a href=https://t.me/cinemala_com1>ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ</a> ]──〄
 │
 ├📁 ᴛᴏᴛᴀʟ ғɪʟᴇs ɪɴ ᴅʙ: {files}
 │
