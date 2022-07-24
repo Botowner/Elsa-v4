@@ -61,12 +61,12 @@ async def cb_handler(bot, update):
             if int(index) == int(data["total"]) - 2:
                 buttons = data['buttons'][int(index)+1].copy()
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backgroup_{int(index)+1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)+2}/{data['total']}", callback_data="pages"),
-                     InlineKeyboardButton("🗑️", callback_data="close")]
+                    [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"backgroup_{int(index)+1}_{keyword}"),
+                     InlineKeyboardButton(f"ᴘᴀɢᴇ {int(index)+2}/{data['total']}", callback_data="pages"),
+                     InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(text="🤖 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 🤖", url=f"https://telegram.dog/{temp.Bot_Username}")]
+                    [InlineKeyboardButton(text="ᴄʜᴇᴄᴋ ᴜʀ ғɪʟᴇ ʜᴇʀᴇ", url=f"https://telegram.dog/{temp.Bot_Username}")]
                 )
                 await update.edit_message_reply_markup( 
                     reply_markup=InlineKeyboardMarkup(buttons)
@@ -75,13 +75,13 @@ async def cb_handler(bot, update):
             else:
                 buttons = data['buttons'][int(index)+1].copy()
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backgroup_{int(index)+1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)+2}/{data['total']}", callback_data="pages"),
-                     InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextgroup_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"backgroup_{int(index)+1}_{keyword}"),
+                     InlineKeyboardButton(f"ᴘᴀɢᴇ {int(index)+2}/{data['total']}", callback_data="pages"),
+                     InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close"),
+                     InlineKeyboardButton("ɴᴇxᴛ", callback_data=f"nextgroup_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(text="🤖 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 🤖", url=f"https://telegram.dog/{temp.Bot_Username}")]
+                    [InlineKeyboardButton(text="ᴄʜᴇᴄᴋ ᴜʀ ғɪʟᴇ ʜᴇʀᴇ", url=f"https://telegram.dog/{temp.Bot_Username}")]
                 )
                 await update.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons))                
                 return
@@ -96,25 +96,25 @@ async def cb_handler(bot, update):
             if int(index) == 1:
                 buttons = data['buttons'][int(index)-1].copy()
                 buttons.append(
-                    [InlineKeyboardButton(f"📃 {int(index)}/{data['total']}", callback_data="pages"),
-                     InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextgroup_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton(f"ᴘᴀɢᴇ {int(index)}/{data['total']}", callback_data="pages"),
+                     InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close"),
+                     InlineKeyboardButton("ɴᴇxᴛ", callback_data=f"nextgroup_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(text="🤖 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 🤖", url=f"https://telegram.dog/{temp.Bot_Username}")]
+                    [InlineKeyboardButton(text="ᴄʜᴇᴄᴋ ᴜʀ ғɪʟᴇ ʜᴇʀᴇ", url=f"https://telegram.dog/{temp.Bot_Username}")]
                 )
                 await update.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons))                
                 return   
             else:
                 buttons = data['buttons'][int(index)-1].copy()
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backgroup_{int(index)-1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)}/{data['total']}", callback_data="pages"),
-                     InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextgroup_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"backgroup_{int(index)-1}_{keyword}"),
+                     InlineKeyboardButton(f"ᴘᴀɢᴇ {int(index)}/{data['total']}", callback_data="pages"),
+                     InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close"),
+                     InlineKeyboardButton("ɴᴇxᴛ", callback_data=f"nextgroup_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(text="🤖 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 🤖", url=f"https://telegram.dog/{temp.Bot_Username}")]
+                    [InlineKeyboardButton(text="ᴄʜᴇᴄᴋ ᴜʀ ғɪʟᴇ ʜᴇʀᴇ", url=f"https://telegram.dog/{temp.Bot_Username}")]
                 )
                 await update.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons))                
                 return
@@ -129,9 +129,9 @@ async def cb_handler(bot, update):
             if int(index) == int(data["total"]) - 2:
                 buttons = data['buttons'][int(index)+1].copy()
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backbot_{int(index)+1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)+2}/{data['total']}", callback_data="pages"),
-                     InlineKeyboardButton("🗑️", callback_data="close")]
+                    [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"backbot_{int(index)+1}_{keyword}"),
+                     InlineKeyboardButton(f"ᴘᴀɢᴇ {int(index)+2}/{data['total']}", callback_data="pages"),
+                     InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
                 )
 
                 await update.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons))                
@@ -139,10 +139,10 @@ async def cb_handler(bot, update):
             else:
                 buttons = data['buttons'][int(index)+1].copy()
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backbot_{int(index)+1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)+2}/{data['total']}", callback_data="pages"),
-                     InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextbot_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"backbot_{int(index)+1}_{keyword}"),
+                     InlineKeyboardButton(f"ᴘᴀɢᴇ {int(index)+2}/{data['total']}", callback_data="pages"),
+                     InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close"),
+                     InlineKeyboardButton("ɴᴇxᴛ", callback_data=f"nextbot_{int(index)+1}_{keyword}")]
                 )
 
                 await update.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons))                
@@ -158,9 +158,9 @@ async def cb_handler(bot, update):
             if int(index) == 1:
                 buttons = data['buttons'][int(index)-1].copy()
                 buttons.append(
-                    [InlineKeyboardButton(f"📃 {int(index)}/{data['total']}", callback_data="pages"),
-                     InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextbot_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton(f"ᴘᴀɢᴇ {int(index)}/{data['total']}", callback_data="pages"),
+                     InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close"),
+                     InlineKeyboardButton("ɴᴇxᴛ", callback_data=f"nextbot_{int(index)-1}_{keyword}")]
                 )
 
                 await update.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons))                
@@ -168,10 +168,10 @@ async def cb_handler(bot, update):
             else:
                 buttons = data['buttons'][int(index)-1].copy()
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backbot_{int(index)-1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)}/{data['total']}", callback_data="pages"),
-                     InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextbot_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"backbot_{int(index)-1}_{keyword}"),
+                     InlineKeyboardButton(f"ᴘᴀɢᴇ {int(index)}/{data['total']}", callback_data="pages"),
+                     InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close"),
+                     InlineKeyboardButton("ɴᴇxᴛ", callback_data=f"nextbot_{int(index)-1}_{keyword}")]
                 )
                 await update.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons))                
                 return
@@ -232,7 +232,7 @@ async def cb_handler(bot, update):
 
             FILE_CAPTION = settings["caption"]
             caption = FILE_CAPTION.format(mention=update.from_user.mention, file_name=title, size=size, caption=files.caption)
-            buttons = [[ InlineKeyboardButton("⚜️ 𝚂𝙷𝙰𝚁𝙴 𝙼𝙴 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁 𝙵𝚁𝙸𝙴𝙽𝙳𝚂 ⚜️", url=f"https://t.me/share/url?url=Best%20AutoFilter%20Bot%20%0A%40LuciferMoringstar_Robot%0A@{temp.Bot_Username}") ]]
+            buttons = [[ InlineKeyboardButton("sʜᴀʀᴇ", url="https://telegram.me/share/url?url=https://t.me/cinemala_com") ]]
             if settings["savefiles"]:
                 protect_content = True
             else:
@@ -293,7 +293,7 @@ async def cb_handler(bot, update):
             title = files.file_name
             size = get_size(files.file_size)
             caption = CUSTOM_FILE_CAPTION.format(mention=update.from_user.mention, file_name=title, size=size, caption=files.caption)
-            buttons = [[ InlineKeyboardButton("⚜️ 𝚂𝙷𝙰𝚁𝙴 𝙼𝙴 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁 𝙵𝚁𝙸𝙴𝙽𝙳𝚂 ⚜️", url=f"https://t.me/share/url?url=Best%20AutoFilter%20Bot%20%0A%40LuciferMoringstar_Robot%0A@{temp.Bot_Username}") ]]
+            buttons = [[ InlineKeyboardButton("sʜᴀʀᴇ", url="https://telegram.me/share/url?url=https://t.me/cinemala_com") ]]
             try:
                 await bot.send_cached_media(chat_id=update.from_user.id, file_id=file_id, caption=caption, reply_markup=InlineKeyboardMarkup(buttons), protect_content=SAVE_FILES)            
             except Exception as e:
@@ -304,9 +304,9 @@ async def cb_handler(bot, update):
                 return
               
         elif update.data == "start":
-            buttons = [[ InlineKeyboardButton("× 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ×", url=f"http://t.me/{temp.Bot_Username}?startgroup=true") ],
-                      [ InlineKeyboardButton("𝚂𝚄𝙿𝙿𝙾𝚁𝚃 💬", url=f"t.me/{SUPPORT}"), InlineKeyboardButton("𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢", url="t.me/Mo_Tech_YT") ],
-                      [ InlineKeyboardButton("ℹ️ 𝙷𝙴𝙻𝙿", callback_data="help"), InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃 🤠", callback_data="about") ]] 
+            buttons = [[ InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"http://t.me/{temp.Bot_Username}?startgroup=true") ],
+                      [ InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url="https://t.me/cinemala_com1"), InlineKeyboardButton("ɢʀᴏᴜᴘ", url="https://t.me/cinemala_com") ],
+                      [ InlineKeyboardButton("ʜᴇʟᴘ", callback_data="help"), InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about") ]] 
             await update.message.edit(START_MESSAGE.format(mention=update.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username), reply_markup=InlineKeyboardMarkup(buttons))
 
         elif update.data == "help":
@@ -336,14 +336,14 @@ async def cb_handler(bot, update):
                 pass
         elif update.data == "about":
             try:
-                buttons = [[ InlineKeyboardButton("📦 𝚂𝙾𝚄𝚁𝙲𝙴 📦", url="https://github.com/PR0FESS0R-99/LuciferMoringstar-Robot")],
+                buttons = [[ InlineKeyboardButton("sᴏᴜʀᴄᴇ", url="https://t.me/cinemala_com1/52")],
                       [ InlineKeyboardButton("𝙷𝙾𝙼𝙴", callback_data="start"), InlineKeyboardButton("𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴", callback_data="usage"), InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴", callback_data="close") ]]                     
-                await update.message.edit(ABOUT_MESSAGE.format(name=CREATOR_NAME, username=CREATOR_USERNAME, py3_version=temp.PY3_VERSION, pyro_version=temp.PYRO_VERSION, version=temp.BOT_VERSION, source="https://github.com/PR0FESS0R-99/LuciferMoringstar-Robot"), reply_markup=InlineKeyboardMarkup(buttons))
+                await update.message.edit(ABOUT_MESSAGE.format(name=CREATOR_NAME, username=CREATOR_USERNAME, py3_version=temp.PY3_VERSION, pyro_version=temp.PYRO_VERSION, version=temp.BOT_VERSION, source="https://t.me/cinemala_com1/52"), reply_markup=InlineKeyboardMarkup(buttons))
             except MessageNotModified:
                 pass
         elif update.data == "usage":
             try:
-                buttons = [[ InlineKeyboardButton("⇇ 𝙱𝙰𝙲𝙺 ⇇", callback_data="about") ]]
+                buttons = [[ InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="about") ]]
                 await update.message.edit(USAGE_MESSAGE.format(CREATOR_NAME, CREATOR_USERNAME), reply_markup=InlineKeyboardMarkup(buttons))
             except MessageNotModified:
                 pass
@@ -352,7 +352,7 @@ async def cb_handler(bot, update):
                 files = await Media.count_documents()
                 users = await db.total_users_count()
                 chats = await db.total_chat_count()
-                buttons = [[ InlineKeyboardButton("⇇ 𝙱𝙰𝙲𝙺", callback_data="help"), InlineKeyboardButton("𝚁𝙴𝙵𝚁𝙴𝚂𝙷", callback_data="status"), InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]]                                 
+                buttons = [[ InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help"), InlineKeyboardButton("𝚁𝙴𝙵𝚁𝙴𝚂𝙷", callback_data="status"), InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]]                                 
                 await update.message.edit(STATUS_MESSAGE.format(bot_name=temp.Bot_Name, users=users, files=files, chats=chats), reply_markup=InlineKeyboardMarkup(buttons))
             except MessageNotModified:
                 pass
@@ -365,62 +365,62 @@ async def cb_handler(bot, update):
                 pass        
         elif update.data == "autofilter":
             try:
-                await update.message.edit(autofilter_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(autofilter_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "connection":
             try:
-                await update.message.edit(modeles_text.connection_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(modeles_text.connection_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "spellcheck":
             try:
-                await update.message.edit(spellcheck_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(spellcheck_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "welcome":
             try:
-                await update.message.edit(welcome_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(welcome_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "misc":
             try:
-                await update.message.edit(misc_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(misc_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "filecaption":
             try:
-                await update.message.edit(filecaption_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(filecaption_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "filestore":
             try:
-                await update.message.edit(modeles_text.filestore_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(modeles_text.filestore_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "inlinecb":
             try:
-                await update.message.edit(modeles_text.inline_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton('🔍 Search Here 🔎', switch_inline_query_current_chat="") ],[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(modeles_text.inline_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎', switch_inline_query_current_chat="") ],[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "funcb":
             try:
-                await update.message.edit(modeles_text.fun_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(modeles_text.fun_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "fontcb":
             try:
-                await update.message.edit(modeles_text.font_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(modeles_text.font_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "sharetextcb":
             try:
-                await update.message.edit(modeles_text.sharetext_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(modeles_text.sharetext_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "ttscb":
             try:
-                await update.message.edit(modeles_text.tts_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(modeles_text.tts_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
 
