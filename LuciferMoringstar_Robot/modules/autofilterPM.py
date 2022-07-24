@@ -42,7 +42,7 @@ async def pm_filters(client, update):
         if files:
             for file in files:
                 file_id = file.file_id
-                filesize = f"[{get_size(file.file_size)}]"
+                filesize = f"{get_size(file.file_size)}"
                 filename = f"{file.file_name}"
                 if SINGLE_BUTTON:
                     btn.append(
