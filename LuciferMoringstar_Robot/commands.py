@@ -81,7 +81,7 @@ async def start(bot: lucifermoringstar_robot, update):
 
     if len(update.command) != 2:
         pr0fess0r_99 = [[ InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"http://t.me/{temp.Bot_Username}?startgroup=true") ],
-                        [ InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url="https://t.me/cinemala_com1"), InlineKeyboardButton("ɢʀᴏᴜᴘ 📢", url="https://t.me/cinemala_com") ],
+                        [ InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url="https://t.me/cinemala_com1"), InlineKeyboardButton("ɢʀᴏᴜᴘ", url="https://t.me/cinemala_com") ],
                         [ InlineKeyboardButton("ʜᴇʟᴘ", callback_data="help"), InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about") ]] 
         await bot.send_photo(photo=random.choice(PICS), chat_id=update.chat.id, caption=START_MESSAGE.format(mention=update.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username), reply_markup=InlineKeyboardMarkup(pr0fess0r_99))
 
