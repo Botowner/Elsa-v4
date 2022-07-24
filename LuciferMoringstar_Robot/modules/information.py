@@ -96,12 +96,12 @@ async def who_is(client, message):
     if chat_photo:
         local_user_photo = await client.download_media(message=chat_photo.big_file_id)
         
-        pr0fess0r_99 = [[ InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close') ]]
+        pr0fess0r_99 = [[ InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close') ]]
         pr0fess0r_99 = InlineKeyboardMarkup(pr0fess0r_99)
         await message.reply_photo(photo=local_user_photo, reply_markup=pr0fess0r_99, caption=message_out_str)        
         os.remove(local_user_photo)
     else:
-        pr0fess0r_99 = [[ InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close') ]]
+        pr0fess0r_99 = [[ InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close') ]]
         pr0fess0r_99 = InlineKeyboardMarkup(pr0fess0r_99)
         await message.reply_text(text=message_out_str, reply_markup=pr0fess0r_99, disable_notification=True)        
 
