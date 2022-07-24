@@ -81,8 +81,8 @@ STATUS_MESSAGE = """
 ╰─[ <a href=https://t.me/cinemala_com1>ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ</a> ]──〄"""
 
 GETFILE_TEXT = """
-Hey {mention} \n 📫 Yᴏʀ Fɪʟᴇ ɪꜱ Rᴇᴀᴅʏ 👇
-\n📂 Mᴏᴠɪᴇ Nᴀᴍᴇ : `{file_name}`\n⚙️ Mᴏᴠɪᴇ Sɪᴢᴇ : {file_size}"""
+𝙃𝙚𝙮 {mention} \n\n 📫 𝙔𝙊𝙐𝙍 𝙁𝙄𝙇𝙀 𝙄𝙎 𝙍𝙀𝘼𝘿𝙔 👇
+\n\n📂 𝙈𝙊𝙑𝙄𝙀 𝙉𝘼𝙈𝙀 : `{file_name}`\n\n⚙️ 𝙈𝙊𝙑𝙄𝙀 𝙎𝙄𝙕𝙀 : {file_size}"""
 
 NOT_SUB = """
 𝙸 𝙻𝙸𝙺𝙴 𝚈𝙾𝚄𝚁 𝚂𝙼𝙰𝚁𝚃𝙽𝙴𝚂𝚂, 𝙱𝚄𝚃 𝙳𝙾𝙽'𝚃 𝙱𝙴 𝙾𝚅𝙴𝚁𝚂𝙼𝙰𝚁𝚃 😤.\n 𝙵𝚒𝚛𝚜𝚝 𝚂𝚞𝚋𝚜𝚌𝚛𝚒𝚋𝚎 𝙼𝚢 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 😕"""              
