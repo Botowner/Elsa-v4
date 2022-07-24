@@ -55,7 +55,7 @@ SPELLMODE_MESSAGE = """
 **__Couldn't Find {query} ?  Please Click Your Request Name**__"""
 
 REQUEST_MESSAGE = """
-**Requested By:** {mention}\n**Requested Name:** {query}\n™ {group_name}"""
+**Requested By:** {mention}\n**Requested Name:** {query}\n™ {group_name}\n© <a href=https://t.me/cinemala_com1>ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ</a>"""
 
 WELCOME_MESSAGE = """
 𝙷𝙴𝙻𝙻𝙾 {mention} 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 {group_name}"""
@@ -81,8 +81,8 @@ STATUS_MESSAGE = """
 ╰─[ <a href=https://t.me/cinemala_com1>ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ</a> ]──〄"""
 
 GETFILE_TEXT = """
-ʜᴇʏ {mention} ʏᴏᴜʀ ғɪʟᴇ ɪs ʀᴇᴀᴅʏ
-\nғɪʟᴇ ɴᴀᴍᴇ : `{file_name}`\n\nғɪʟᴇ sɪᴢᴇ : {file_size}"""
+Hey {mention} \n 📫 Yᴏʀ Fɪʟᴇ ɪꜱ Rᴇᴀᴅʏ 👇
+\n📂 Mᴏᴠɪᴇ Nᴀᴍᴇ : `{file_name}`\n⚙️ Mᴏᴠɪᴇ Sɪᴢᴇ : {file_size}"""
 
 NOT_SUB = """
 𝙸 𝙻𝙸𝙺𝙴 𝚈𝙾𝚄𝚁 𝚂𝙼𝙰𝚁𝚃𝙽𝙴𝚂𝚂, 𝙱𝚄𝚃 𝙳𝙾𝙽'𝚃 𝙱𝙴 𝙾𝚅𝙴𝚁𝚂𝙼𝙰𝚁𝚃 😤.\n 𝙵𝚒𝚛𝚜𝚝 𝚂𝚞𝚋𝚜𝚌𝚛𝚒𝚋𝚎 𝙼𝚢 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 😕"""              
