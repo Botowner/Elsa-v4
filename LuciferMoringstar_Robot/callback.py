@@ -252,7 +252,7 @@ async def cb_handler(bot, update):
                     try:
                         invite_link = await bot.create_chat_invite_link(GET_FILECHANNEL)      
                         dlFile = await bot.send_cached_media(chat_id=GET_FILECHANNEL, file_id=file_id, caption=caption, reply_markup=InlineKeyboardMarkup(buttons))
-                        dlReply = await update.message.reply_text(GETFILE_TEXT.format(mention=update.from_user.mention, file_name=title, file_size=size), reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("📥 🅳︎🅾︎🆆︎🅽︎🅻︎🅾︎🅰︎🅳︎ 📥", url=dlFile.link) ],[ InlineKeyboardButton("⚠️𝙲𝙾𝙽'𝚃 𝙰𝙲𝙲𝙴𝚂𝚂 𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴⚠️", url=invite_link.invite_link) ]] ))
+                        dlReply = await update.message.reply_text(GETFILE_TEXT.format(mention=update.from_user.mention, file_name=title, file_size=size), reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("📥<b> Download Link </b>📥", url=dlFile.link) ],[ InlineKeyboardButton("⚠️<b> Can't Access </b>❓<b> Click Here </b>⚠️", url=invite_link.invite_link) ]] ))
                         await asyncio.sleep(1000)
                         await dlFile.delete()
                         await dlReply.delete()
@@ -500,7 +500,7 @@ async def cb_handler(bot, update):
                 cb = "disconnect"
 
             pr0fess0r_99 = [[ InlineKeyboardButton(f"{stat}", callback_data=f"{cb}:{group_id}") ],
-                            [ InlineKeyboardButton("𝙳𝙴𝙻𝙴𝚃𝙴", callback_data=f"deletecb:{group_id}"), InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="backcb") ]]         
+                            [ InlineKeyboardButton("𝙳𝙴𝙻𝙴𝚃𝙴", callback_data=f"deletecb:{group_id}"), InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="backcb") ]]         
             pr0fess0r_99 = InlineKeyboardMarkup(pr0fess0r_99)
             await update.message.edit("""𝙶𝚁𝙾𝚄𝙿 𝙽𝙰𝙼𝙴: **{title}**\n 𝙶𝚁𝙾𝚄𝙿 𝙸𝙳: `{group_id}`""", reply_markup=pr0fess0r_99)        
             return
