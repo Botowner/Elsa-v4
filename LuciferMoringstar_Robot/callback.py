@@ -352,7 +352,7 @@ async def cb_handler(bot, update):
                 files = await Media.count_documents()
                 users = await db.total_users_count()
                 chats = await db.total_chat_count()
-                buttons = [[ InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help"), InlineKeyboardButton("𝚁𝙴𝙵𝚁𝙴𝚂𝙷", callback_data="status"), InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]]                                 
+                buttons = [[ InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help"), InlineKeyboardButton("𝚁𝙴𝙵𝚁𝙴𝚂𝙷", callback_data="status"), InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴", callback_data="close") ]]                                 
                 await update.message.edit(STATUS_MESSAGE.format(bot_name=temp.Bot_Name, users=users, files=files, chats=chats), reply_markup=InlineKeyboardMarkup(buttons))
             except MessageNotModified:
                 pass
@@ -493,10 +493,10 @@ async def cb_handler(bot, update):
             user_id = update.from_user.id
 
             if act == "":
-                stat = "🅲︎🅾︎🅽︎🅽︎🅴︎🅲︎🆃︎"
+                stat = "𝕔𝕠𝕟𝕟𝕖𝕔𝕥"
                 cb = "connectcb"
             else:
-                stat = "🅳︎🅸︎🆂︎🅲︎🅾︎🅽︎🅽︎🅴︎🅲︎🆃︎"
+                stat = "𝕕𝕚𝕤𝕔𝕠𝕟𝕟𝕖𝕔𝕥"
                 cb = "disconnect"
 
             pr0fess0r_99 = [[ InlineKeyboardButton(f"{stat}", callback_data=f"{cb}:{group_id}") ],
