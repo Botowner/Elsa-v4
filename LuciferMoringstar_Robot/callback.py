@@ -312,24 +312,24 @@ async def cb_handler(bot, update):
         elif update.data == "help":
             try:
                 buttons = [[
-                 InlineKeyboardButton("AutoFilter", callback_data="autofilter"),
-                 InlineKeyboardButton("FileStore", callback_data="filestore"),
-                 InlineKeyboardButton("Misc", callback_data="misc")
+                 InlineKeyboardButton("ᴀᴜᴛᴏғɪʟᴛᴇʀ", callback_data="autofilter"),
+                 InlineKeyboardButton("ғɪʟᴇ sᴛᴏʀᴇ", callback_data="filestore"),
+                 InlineKeyboardButton("ᴍɪsᴄ", callback_data="misc")
                  ],[
-                 InlineKeyboardButton("Connections", callback_data="connection"),
-                 InlineKeyboardButton("SpellCheck", callback_data="spellcheck"),
-                 InlineKeyboardButton("Via", callback_data="inlinecb")
+                 InlineKeyboardButton("ᴄᴏɴɴᴇᴄᴛɪᴏɴs", callback_data="connection"),
+                 InlineKeyboardButton("sᴘᴇʟʟᴄʜᴇᴄᴋ", callback_data="spellcheck"),
+                 InlineKeyboardButton("ᴠɪᴀ", callback_data="inlinecb")
                  ],[
-                 InlineKeyboardButton("Welcome", callback_data="welcome"),
-                 InlineKeyboardButton("Caption", callback_data="filecaption"),
-                 InlineKeyboardButton("Fun", callback_data="funcb")
+                 InlineKeyboardButton("ᴡᴇʟᴄᴏᴍᴇ", callback_data="welcome"),
+                 InlineKeyboardButton("ᴄᴀᴘᴛɪᴏɴ", callback_data="filecaption"),
+                 InlineKeyboardButton("ғᴜɴ", callback_data="funcb")
                  ],[
-                 InlineKeyboardButton("Font", callback_data="fontcb"),
-                 InlineKeyboardButton("ShareText", callback_data="sharetextcb"),
-                 InlineKeyboardButton("TTs", callback_data="ttscb")
+                 InlineKeyboardButton("ғᴏɴᴛ", callback_data="fontcb"),
+                 InlineKeyboardButton("sʜᴀʀᴇ ᴛᴇxᴛ", callback_data="sharetextcb"),
+                 InlineKeyboardButton("ᴛᴛs", callback_data="ttscb")
                  ],[
-                 InlineKeyboardButton("Status", callback_data="status"),
-                 InlineKeyboardButton("Home", callback_data="start")
+                 InlineKeyboardButton("sᴛᴀᴛᴜs", callback_data="status"),
+                 InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="start")
                  ]]                     
                 await update.message.edit(HELP_MESSAGE.format(mention=update.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username), reply_markup=InlineKeyboardMarkup(buttons))
             except MessageNotModified:
@@ -337,7 +337,7 @@ async def cb_handler(bot, update):
         elif update.data == "about":
             try:
                 buttons = [[ InlineKeyboardButton("sᴏᴜʀᴄᴇ", url="https://t.me/cinemala_com1/52")],
-                      [ InlineKeyboardButton("𝙷𝙾𝙼𝙴", callback_data="start"), InlineKeyboardButton("𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴", callback_data="usage"), InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴", callback_data="close") ]]                     
+                      [ InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="start"), InlineKeyboardButton("𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴", callback_data="usage"), InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴", callback_data="close") ]]                     
                 await update.message.edit(ABOUT_MESSAGE.format(name=CREATOR_NAME, username=CREATOR_USERNAME, py3_version=temp.PY3_VERSION, pyro_version=temp.PYRO_VERSION, version=temp.BOT_VERSION, source="https://t.me/cinemala_com1/52"), reply_markup=InlineKeyboardMarkup(buttons))
             except MessageNotModified:
                 pass
@@ -400,7 +400,7 @@ async def cb_handler(bot, update):
                 pass
         elif update.data == "inlinecb":
             try:
-                await update.message.edit(modeles_text.inline_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎', switch_inline_query_current_chat="") ],[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(modeles_text.inline_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎', switch_inline_query_current_chat="") ],[ InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "funcb":
